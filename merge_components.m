@@ -28,7 +28,7 @@ if nargin < 8; options = []; end
 if ~isfield(options,'d1') || isempty(options.d1); d1 = input('What is the total number of rows? \n'); else d1 = options.d1; end          % # of rows
 if ~isfield(options,'d2') || isempty(options.d2); d2 = input('What is the total number of columns? \n'); else d2 = options.d2; end       % # of columns
 if ~isfield(options,'merge_thr') || isempty(options.merge_thr); thr = defoptions.merge_thr; else thr = options.merge_thr; end     % merging threshold
-if ~isfield(options,'max_merg'); mx = 50; else mx = options.max_merg; end           % maximum merging operations
+if ~isfield(options,'max_merg'); mx = 250; else mx = options.max_merg; end           % maximum merging operations
 if ~isfield(options,'deconv_method') || isempty(options.deconv_method); options.deconv_method = defoptions.deconv_method; end
 if ~isfield(options,'fast_merge') || isempty(options.fast_merge); options.fast_merge = defoptions.fast_merge; end  % flag for using fast merging
 
