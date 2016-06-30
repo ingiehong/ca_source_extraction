@@ -91,7 +91,7 @@ fontname = 'helvetica';
                             'bbox',[min(CR{i,1}(1,:)),max(CR{i,1}(1,:)),min(CR{i,1}(2,:)),max(CR{i,1}(2,:))],...
                             'centroid',cm(i,:));
             end
-            if i == 1
+            if i == 1 && ~isempty(CR{i,1})
                 jsf = repmat(jsf,size(Aor,2),1);
             end
         end

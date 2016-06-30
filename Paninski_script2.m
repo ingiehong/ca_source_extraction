@@ -18,8 +18,8 @@ d = d1*d2;                                          % total number of pixels
 
 %% Set parameters
 
-K = 100;                                           % number of components to be found
-tau = 3;   %10 for neuron 3 for axons              % std of gaussian kernel (size of neuron) 
+K = 500;                                           % number of components to be found
+tau = 10;                                          % std of gaussian kernel (size of neuron) 
 pan = 2;                                            % order of autoregressive system (p = 0 no dynamics, p=1 just decay, p = 2, both rise and decay)
 merge_thr = 0.8;                                  % merging threshold
 
